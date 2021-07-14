@@ -10,6 +10,8 @@
 body {
     font-family: var(--font-family);
     color: var(--grayish-blue);
+    width: 100%;
+    margin: 0;
 }
 
 .inner-container {
@@ -36,6 +38,7 @@ body {
     color: var(--dark-grayish-blue);
     font-weight: bold;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
 .big-title {
@@ -51,12 +54,11 @@ body {
     text-align: left;
     width: 100%;
     margin-bottom: 0.5rem;
-
 }
-
 
 .text {
     line-height: 1.5;
+    font-size: 0.8rem;
 }
 
 .big-text {
@@ -65,16 +67,12 @@ body {
 
 .medium-text {
     font-size: 1rem;
-  
 }
 
 .small-text {
     text-align: justify;
-    font-size: 0.8rem;
     margin-bottom: 3rem;
-
 }
-
 
 .buttons {
     display: flex;
@@ -107,8 +105,6 @@ body {
     display: flex;
 }
 
-
-
 .right-col {
     margin-top: 7rem;
     margin-left: 5rem;
@@ -125,17 +121,61 @@ body {
     margin: 4rem 8rem;
 }
 
+.features .text {
+    width: 24vw;
+}
 
+.small-image {
+    margin-bottom: 2rem;
+    height: 6vh;
+}
 
 .brands-images {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 4rem;
+    justify-content: space-between;
+    margin: 7rem 8rem 7rem 8rem;
+}
+
+.brands-images img {
+    width: 11vw;
 }
 
 .footer {
     display: flex;
     justify-content: space-around;
+    text-align: justify;
+   padding-top: 2rem;
+    height: 10vh;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+   
 }
 
-.icons {}
+.footer .logo img {
+    width: 4vw;
+    margin-bottom: -12rem;
+  
+}
+
+.contact div {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+}
+
+.icons {
+    margin-left: 4rem;
+    margin-top: 1rem;
+
+}
+
+.icons img {
+    margin-right: 1rem;
+}
+
+
+.bg-footer {
+    height: 20vh;
+    background-color:hsl(220, 17%, 93%);
+}
