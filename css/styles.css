@@ -12,6 +12,7 @@ body {
     color: var(--grayish-blue);
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 .inner-container {
@@ -26,7 +27,7 @@ body {
 }
 
 .logo {
-    margin-top: -10rem;
+    margin-top: -15rem;
 }
 
 .header {
@@ -144,7 +145,7 @@ body {
     display: flex;
     justify-content: space-around;
     text-align: justify;
-   padding-top: 2rem;
+    padding-top: 2rem;
     height: 10vh;
     margin-top: 2rem;
     margin-left: 8rem;
@@ -154,7 +155,7 @@ body {
 
 .footer .logo img {
     width: 4vw;
-    margin-bottom: -12rem;
+    margin-bottom: -17rem;
   
 }
 
