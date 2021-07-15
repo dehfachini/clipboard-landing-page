@@ -1,6 +1,6 @@
 # Frontend Mentor - Clipboard Landing Page
 
-This is a solution to the [Huddle Landing Page With Alternating Feature Blocks Master Solution challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Clipboard Landing Page Solution challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Overview
 
