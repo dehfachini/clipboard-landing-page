@@ -181,6 +181,11 @@ body {
     body {
         width: fit-content;
     }
+    .text {
+        line-height: 1.5;
+        font-size: 3.6rem;
+        margin-bottom: 4rem;
+    }
     .logo {
         margin-top: -6rem;
     }
@@ -198,6 +203,7 @@ body {
     }
     .title {
         margin-bottom: 5rem;
+        font-size: 5rem;
     }
     .buttons {
         display: flex;
@@ -216,7 +222,8 @@ body {
         font-size: 6rem;
     }
     .medium-text {
-        font-size: 4rem;
+        font-size: 3.6rem;
+        margin-bottom: 6rem;
     }
     .computer-content {
         margin: 15rem 0rem 0rem 0rem;
@@ -224,17 +231,13 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
     .computer-image img {
         width: 60rem;
     }
-
     .right-col {
-      
         margin-left: 0rem;
         width: 80%;
     }
-
     .small-title {
         font-size: 6rem;
         text-align: center;
@@ -242,10 +245,70 @@ body {
         margin-bottom: 1rem;
         margin-top: 5rem;
     }
-
     .small-text {
         text-align: center;
         margin-bottom: 3rem;
         font-size: 3.8rem;
+    }
+    .devices-image {
+        margin-top: 8rem;
+    }
+    .devices-image img {
+        width: 60rem;
+    }
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+    .features .text {
+        width: 90%;
+    }
+    .small-image {
+        height: 30vh;
+        margin-bottom: 8rem;
+        margin-top: 4rem;
+    }
+    .small-image img {
+        height: 30vh;
+    }
+    .brands-images {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20rem;
+    }
+    .brands-images img {
+        width: 50%;
+        margin-bottom: 10rem;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 320vh;
+    }
+    .footer .logo {
+        margin-bottom: 30rem;
+    }
+    .footer .logo img {
+        width: 20%;
+        margin-bottom: -24rem;
+    }
+    .contact div {
+        font-size: 3.6rem;
+        margin-bottom: 4rem;
+    }
+
+    .icons {
+        margin-left: 5rem;
+        margin-top: 3rem;
+    }
+    .icons img {
+        margin-right: 6rem;
+        width: 8%;
+    }
+    .bg-footer {
+        height: 380vh;
+        
     }
 }
