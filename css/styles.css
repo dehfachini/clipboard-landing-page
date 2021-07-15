@@ -298,7 +298,6 @@ body {
         font-size: 3.6rem;
         margin-bottom: 4rem;
     }
-
     .icons {
         margin-left: 5rem;
         margin-top: 3rem;
@@ -309,6 +308,5 @@ body {
     }
     .bg-footer {
         height: 380vh;
-        
     }
 }
