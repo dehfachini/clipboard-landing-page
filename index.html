@@ -18,15 +18,20 @@
 
 <body>
 
-
+  <!-- note 1 : the image here did not have 100 w .... so it did not fill 100% of the sides -->
   <div class="bg-image">
-    <img src="./images/bg-header-desktop.png" alt="ng-header">
+    <img class="bg-image-img" src="./images/bg-header-desktop.png" alt="ng-header">
+
+    <!-- note 2: here we have a margin-top: -15rem; this is breaking on mobile, instead of using negative margin, we can use position relative and absolute to set the elements into "layers", also, try to avoid using negative margins unless they are REALLY small or % inside a container -->
     <div class="logo flex">
       <img src="./images/logo.svg" alt="logo">
     </div>
   </div>
+
+  <!-- note 3: this container becomes too small on mobile, one solution is to adjust the "@media", maybe add another breakpoint, but for now I'll make a chang and not use "maring" for the size, but width instead (as a %) -->
   <div class="inner-container">
     <div class="header flex">
+      <!-- font size on responsive is too big, not sure with, so I'll just comment it out   -->
       <div class="title big-title">
         A history of everything you copy
       </div>
@@ -34,7 +39,7 @@
         Clipboard allows you to track and organize everything you
         copy. Instantly access your clipboard on all your devices.
       </div>
-
+    <!-- note4: for some reason the buttons are too large on mobile -->
       <div class="buttons">
         <div class="button ios">
           Download for iOS
@@ -57,7 +62,7 @@
     </div>
   </div>
 
-
+  <!-- note5: here breaks on mobile, just like above I'll use width instead of margin -->
   <div class="computer-content">
     <div class="computer-image">
       <img src="./images/image-computer.png" alt="computer">
@@ -192,7 +197,8 @@
   </div>
   <div class="bg-footer">
     <div class="footer">
-      <div class="logo">
+      <!-- note : avoid using the same class (logo) as the other image -->
+      <div class="footer-logo">
         <img src="./images/logo.svg" alt="logo">
       </div>
       <div class="contact">

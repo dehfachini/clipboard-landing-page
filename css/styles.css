@@ -16,7 +16,29 @@ body {
 }
 
 .inner-container {
-    margin: 3rem 15rem;
+    /* note 3 */
+    width: 41rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 9;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--grayish-blue);
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.inner-container {
+    /* note 3 */
+    width: 41rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
 }
 
 .flex {
@@ -27,7 +49,10 @@ body {
 }
 
 .logo {
-    margin-top: -15rem;
+    /* margin-top: -15rem; */
+    /* note 2 */
+    position: relative;
+    margin-top: 2rem;
 }
 
 .header {
@@ -79,6 +104,10 @@ body {
     display: flex;
     margin: 3rem;
     color: white;
+    /* note 4 */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* with this the buttons will center if they don't fit the width*/
 }
 
 .button {
@@ -90,10 +119,17 @@ body {
     justify-content: center;
     font-weight: bold;
     cursor: pointer;
+    /* note 4 : here I'm adding a margin bottom for when they break the screen before the breakpoint*/
+    margin-bottom: 1rem;
 }
 
+.ios,.mac{
+    /* note 4: since they break before the breakpoint,I set the margin on both, so they'll be on the center */
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
 .ios {
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     background-color: var(--strong-cyan);
 }
 
@@ -102,43 +138,101 @@ body {
 }
 
 .computer-content {
-    margin: 1rem 6rem 6rem -4rem;
+    /* note 5 */
+    /* margin: 1rem 6rem 6rem -4rem; */
+    /* display: flex; */
+    width: 100%;
+    max-width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
-
+.computer-image{
+    width: 60%;
+}
+.computer-image img{
+    width: 100%;
+}
 .right-col {
-    margin-top: 7rem;
+    margin-top: 3rem;
     margin-left: 5rem;
     width: 25vw;
+}
+@media  only screen and (max-width: 850px) {
+    .computer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .computer-image{
+        width: 94%;
+    }
+    .right-col {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .small-title{
+        text-align: center;
+    }
 }
 
 .devices-image {
     margin-top: 4rem;
 }
+.devices-image img{
+    width: 98%;
+}
 
 .features {
     display: flex;
     justify-content: space-between;
-    margin: 4rem 8rem;
+    /* margin: 4rem 8rem; */
+    width: 40rem;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .features .text {
-    width: 24vw;
+    width: 20rem;
+    max-width: 100%;
+}
+.features .flex{
+    /* background-color: red; */
+    width: 30%;
+}
+@media  only screen and (max-width: 850px) {
+    .features {
+        flex-direction: column;
+    }
+    .features .flex{
+        width: 95%;
+    }
 }
 
 .small-image {
-    margin-bottom: 2rem;
-    height: 6vh;
+    /* height: 6vh; */
+}
+.small-image img{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .brands-images {
     display: flex;
     justify-content: space-between;
-    margin: 7rem 8rem 7rem 8rem;
+    /* margin: 7rem 8rem 7rem 8rem; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .brands-images img {
-    width: 11vw;
+    width: 4rem;
 }
 
 .footer {
@@ -146,15 +240,20 @@ body {
     justify-content: space-around;
     text-align: justify;
     padding-top: 2rem;
-    height: 10vh;
+    /* height: 10vh; */
     margin-top: 2rem;
-    margin-left: 8rem;
-    margin-right: 8rem;
+    /* margin-left: 8rem;
+    margin-right: 8rem; */
+    width: 35rem;
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.footer .logo img {
-    width: 4vw;
-    margin-bottom: -17rem;
+.footer .footer-logo img {
+    width: 29%;
+    /* width: 4vw;
+    margin-bottom: -17rem; */
 }
 
 .contact div {
@@ -173,37 +272,38 @@ body {
 }
 
 .bg-footer {
-    height: 20vh;
+    /* height: 20vh; */
     background-color: hsl(220, 17%, 93%);
 }
 
-@media (max-width: 376px) {
+@media  only screen and (max-width: 376px) {
     body {
         width: fit-content;
     }
     .text {
         line-height: 1.5;
-        font-size: 3.6rem;
+        /* font-size: 3.6rem; */
         margin-bottom: 4rem;
     }
     .logo {
-        margin-top: -6rem;
+        /* margin-top: -6rem; */
     }
     .logo img {
         width: 30%;
     }
-    .big-title {
+    /* .big-title {
         font-size: 6.5rem;
-    }
+    } */
     .big-text {
-        font-size: 3.5rem;
+        /* font-size: 3.5rem; */
+        font-size: 1.5rem;
     }
-    .inner-container {
+    /* .inner-container {
         margin: 8rem 6rem 3rem 6rem;
-    }
+    } */
     .title {
         margin-bottom: 5rem;
-        font-size: 5rem;
+        /* font-size: 5rem; */
     }
     .buttons {
         display: flex;
@@ -211,35 +311,36 @@ body {
         margin-top: 10rem;
     }
     .button {
-        width: 60rem;
-        height: 10rem;
-        margin-bottom: 4rem;
-        font-size: 3rem;
+        /* note 4 */
+        /* width: 60rem;
+        height: 10rem; */
+        margin-bottom: 2rem;
+        /* font-size: 3rem; */
         border-radius: 100px;
     }
-    .medium-title {
+    /* .medium-title {
         margin-top: 10rem;
         font-size: 6rem;
     }
     .medium-text {
         font-size: 3.6rem;
         margin-bottom: 6rem;
-    }
+    } */
     .computer-content {
-        margin: 15rem 0rem 0rem 0rem;
-        display: flex;
+        /* margin: 15rem 0rem 0rem 0rem; */
+        /* display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; */
     }
-    .computer-image img {
+    /* .computer-image img {
         width: 60rem;
-    }
+    } */
     .right-col {
-        margin-left: 0rem;
+        /* margin-left: 0rem; */
         width: 80%;
     }
     .small-title {
-        font-size: 6rem;
+        /* font-size: 6rem; */
         text-align: center;
         width: 100%;
         margin-bottom: 1rem;
@@ -248,14 +349,14 @@ body {
     .small-text {
         text-align: center;
         margin-bottom: 3rem;
-        font-size: 3.8rem;
+        /* font-size: 3.8rem; */
     }
     .devices-image {
         margin-top: 8rem;
     }
-    .devices-image img {
+    /* .devices-image img {
         width: 60rem;
-    }
+    } */
     .features {
         display: flex;
         flex-direction: column;
@@ -264,39 +365,39 @@ body {
         width: 90%;
     }
     .small-image {
-        height: 30vh;
-        margin-bottom: 8rem;
-        margin-top: 4rem;
+        /* height: 30vh; */
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     .small-image img {
-        height: 30vh;
+        /* height: 30vh; */
     }
     .brands-images {
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-top: 20rem;
+        /* margin-top: 20rem; */
     }
     .brands-images img {
         width: 50%;
-        margin-bottom: 10rem;
+        margin-bottom: 3rem;
     }
     .footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        height: 320vh;
+        /* height: 320vh; */
     }
     .footer .logo {
-        margin-bottom: 30rem;
+        /* margin-bottom: 30rem; */
     }
     .footer .logo img {
         width: 20%;
-        margin-bottom: -24rem;
+        /* margin-bottom: -24rem; */
     }
     .contact div {
-        font-size: 3.6rem;
-        margin-bottom: 4rem;
+        /* font-size: 3.6rem; */
+        margin-bottom: 1rem;
     }
     .icons {
         margin-left: 5rem;
@@ -307,6 +408,18 @@ body {
         width: 8%;
     }
     .bg-footer {
-        height: 380vh;
+        /* height: 380vh; */
     }
+}
+
+
+
+/* added classes */
+.bg-image-img{
+    /* note 1 */
+    width: 100%;
+    /* note 2 */
+    position: absolute;
+    left: 0;
+    top: 0;
 }
