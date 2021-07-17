@@ -21,23 +21,6 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 9;
-}
-
-body {
-    font-family: var(--font-family);
-    color: var(--grayish-blue);
-    width: 100%;
-    margin: 0;
-    overflow-x: hidden;
-}
-
-.inner-container {
-    /* note 3 */
-    width: 41rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 90%;
 }
 
@@ -121,13 +104,11 @@ body {
     cursor: pointer;
     /* note 4 : here I'm adding a margin bottom for when they break the screen before the breakpoint*/
     margin-bottom: 1rem;
-}
-
-.ios,.mac{
     /* note 4: since they break before the breakpoint,I set the margin on both, so they'll be on the center */
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
+
 .ios {
     /* margin-right: 1rem; */
     background-color: var(--strong-cyan);
@@ -146,24 +127,28 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.computer-image{
+
+.computer-image {
     width: 60%;
 }
-.computer-image img{
+
+.computer-image img {
     width: 100%;
 }
+
 .right-col {
     margin-top: 3rem;
     margin-left: 5rem;
     width: 25vw;
 }
-@media  only screen and (max-width: 850px) {
+
+@media only screen and (max-width: 850px) {
     .computer-content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .computer-image{
+    .computer-image {
         width: 94%;
     }
     .right-col {
@@ -172,7 +157,7 @@ body {
         margin-right: auto;
         text-align: center;
     }
-    .small-title{
+    .small-title {
         text-align: center;
     }
 }
@@ -180,7 +165,8 @@ body {
 .devices-image {
     margin-top: 4rem;
 }
-.devices-image img{
+
+.devices-image img {
     width: 98%;
 }
 
@@ -198,15 +184,17 @@ body {
     width: 20rem;
     max-width: 100%;
 }
-.features .flex{
+
+.features .flex {
     /* background-color: red; */
     width: 30%;
 }
-@media  only screen and (max-width: 850px) {
+
+@media only screen and (max-width: 850px) {
     .features {
         flex-direction: column;
     }
-    .features .flex{
+    .features .flex {
         width: 95%;
     }
 }
@@ -214,7 +202,8 @@ body {
 .small-image {
     /* height: 6vh; */
 }
-.small-image img{
+
+.small-image img {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
@@ -276,7 +265,7 @@ body {
     background-color: hsl(220, 17%, 93%);
 }
 
-@media  only screen and (max-width: 376px) {
+@media only screen and (max-width: 376px) {
     body {
         width: fit-content;
     }
@@ -412,10 +401,9 @@ body {
     }
 }
 
-
-
 /* added classes */
-.bg-image-img{
+
+.bg-image-img {
     /* note 1 */
     width: 100%;
     /* note 2 */
